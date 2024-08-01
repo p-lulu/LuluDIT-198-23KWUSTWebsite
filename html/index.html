@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiriri Women's University Website</title> 
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showContent(section) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about-us').style.display = 'none';
+            document.getElementById('departments').style.display = 'none';
+            document.getElementById('contact-us').style.display = 'none';
+            
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>This is My University Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li onclick="showContent('home')">Home</li>
+            <li onclick="showContent('about-us')">About Us</li>
+            <li onclick="showContent('departments')">Departments</li>
+            <li onclick="showContent('contact-us')">Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home" style="display: block;">
+            <img src="https://virtual.kwust.ac.ke/pluginfile.php/1/theme_moove/marketing1icon/1604621713/KWUST.jpg" alt="Kiriri Women's University Administration Block" width="600">
+            <p>Kiriri Women's University is a leading institution dedicated to academic excellence and empowering women through education.</p>
+        </section>
+        <section id="about-us" style="display: none;">
+            <h2>About Us</h2>
+            <p>Kiriri Women’s University is a leading institution dedicated to academic excellence.</p>
+        </section>
+        <section id="departments" style="display: none;">
+            <h2>Departments</h2>
+            <ol>
+                <li>Computer Science</li>
+                <li>Mathematics</li>
+                <li>Business</li>
+                <li>Education</li>
+                <li>Hospitality</li>
+                <li>Information Technology</li>
+            </ol>
+        </section>
+        <section id="contact-us" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>Address: Kiriri Women's University, Nairobi, Kenya</p>
+            <p>Email: info@kwust.ac.ke</p>
+            <p>Phone: +254 (0) 202042692/3</p>
+        </section>
+    </main>
+</body>
+</html>
